@@ -1,0 +1,176 @@
+/* Import Google font as fallback for Gibson */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Gibson font declarations if you have the font files */
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gibson', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #121826;
+  color: #f8f9fa;
+  line-height: 1.5;
+}
+
+/* Portal Container */
+.portal-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #121826;
+}
+
+/* Header */
+.portal-header {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: #1a2235;
+  border-bottom: 1px solid #2d3748;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #f8f9fa;
+  letter-spacing: 0.025em;
+  margin-bottom: 0.5rem;
+}
+
+.header-subtitle {
+  color: #cbd5e0;
+  font-weight: 400;
+}
+
+/* Main Content */
+.portal-main {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card Styles */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.app-card {
+  background-color: #1a2235;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card-hovered {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-icon-container {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.25rem;
+  flex-shrink: 0;
+}
+
+.card-text-container {
+  min-width: 0;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-description {
+  color: #cbd5e0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Footer */
+.portal-footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: #1a2235;
+  border-top: 1px solid #2d3748;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #cbd5e0;
+  font-size: 0.875rem;
+}
