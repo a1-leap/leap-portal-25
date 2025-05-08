@@ -2,7 +2,7 @@
   "name": "leap-portal-new",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://a1-leap.github.io/leap-portal/",
+  "homepage": "https://a1-leap.github.io/leap-portal-25/",
   "type": "module",
   "scripts": {
     "dev": "vite",
