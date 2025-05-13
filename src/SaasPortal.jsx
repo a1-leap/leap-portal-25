@@ -8,6 +8,7 @@ import {
   Users,
   Globe,
   LifeBuoy,
+  ShieldQuestion,
 } from "lucide-react";
 import "./SaasPortal.css";
 
@@ -78,6 +79,14 @@ const SaasPortal = () => {
       url: "#",
       icon: <LifeBuoy size={32} />,
       color: "#e74c3c",
+    },
+     {
+      id: "feature",
+      name: "Monday Feature Request",
+      description: "Feature Request Form",
+      url: "https://wkf.ms/3SmWnoF",
+      icon: <ShieldQuestion size={32} />,
+      color: "#e7bd12",
     },
   ];
 
