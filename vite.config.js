@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     assetsDir: 'assets', // Ensure assets go in a predictable directory
     // Ensure file names don't use hash in development for easier debugging
+    outDir: 'docs', // Change output to 'docs' instead of default 'dist'
     rollupOptions: {
       output: {
         entryFileNames: 'assets/[name].js',
