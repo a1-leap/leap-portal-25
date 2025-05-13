@@ -8,7 +8,9 @@ import {
   Users,
   Globe,
   LifeBuoy,
+  LucideClapperboard,
   ShieldQuestion,
+  Clapperboard,
 } from "lucide-react";
 import "./SaasPortal.css";
 
@@ -80,7 +82,15 @@ const SaasPortal = () => {
       icon: <LifeBuoy size={32} />,
       color: "#e74c3c",
     },
-     {
+    {
+      id: "newwork",
+      name: "New Work Form",
+      description: "New Work Form",
+      url: "https://wkf.ms/44vro0K",
+      icon: <Clapperboard size={32} />,
+      color: "#cf9c3c",
+    },
+    {
       id: "feature",
       name: "Monday Feature Request",
       description: "Feature Request Form",
